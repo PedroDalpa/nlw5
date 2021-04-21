@@ -1,0 +1,14 @@
+{
+  "type":"mysql",
+  "database": "liftoff",
+  "host": "localhost",
+  "port": "3306",
+  "username": "root",
+  "password": "pingo@708",
+  "migrations":["./src/database/migrations/**.ts"],
+  "logging": true,
+  "cli":{
+    "migrationsDir":"./src/database/migrations"
+  },
+  "entities": ["./src/models/**.ts"]
+}
