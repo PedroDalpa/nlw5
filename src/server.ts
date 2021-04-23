@@ -1,11 +1,4 @@
-import express from 'express';
-import './database';
-import { routes } from './routes';
+import { http } from './http';
+import './websocket/client';
 
-const app = express();
-
-app.use(express.json());
-// app.use(cors());
-app.use(routes);
-
-app.listen(3333, () => console.log('server is running!!'));
+http.listen(3333, () => console.info('server is running!!'));
